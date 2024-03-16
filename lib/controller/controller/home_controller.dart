@@ -22,8 +22,11 @@ class HomeController extends GetxController {
       loding.value = false;
       update();
       return homeData;
+      // ignore: deprecated_member_use
     } on DioError catch (e) {
+      log('msg : ${e.message}');
     } catch (e) {
+        log('msg : $e');
       loding.value = false;
     }
     return null;
@@ -34,5 +37,4 @@ class HomeController extends GetxController {
     getHomeScreen().then((value) => homeModel = value!);
     super.onInit();
   }
-
 }

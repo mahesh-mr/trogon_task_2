@@ -1,10 +1,7 @@
 import 'dart:developer';
-
 import 'package:dio/dio.dart';
 import 'package:trogon_task_2/controller/service/course_service/course_json.dart';
 import 'package:trogon_task_2/controller/service/home_service/home_json.dart';
-import 'package:trogon_task_2/model/home_model.dart';
-
 import '../../../model/course_model.dart';
 
 class CourseService {

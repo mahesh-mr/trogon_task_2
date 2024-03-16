@@ -39,20 +39,7 @@ class StrimingContaner extends StatelessWidget {
                     myCourseController.imageSliders[index],
                     height: size.height * 0.05,
                     width: size.width * 0.14,
-                     loadingBuilder: (context, child, loadingProgress) {
-
-                  if (loadingProgress==null) {
-                    return child;
-                  }
-
-                   return const Center(
-            child: CircularProgressIndicator(
-              color: appPrimary,
-            ),
-          );
-           
-               
-                },
+                    
                   ),
                   Text(
                     myCourseController.strings[index],
