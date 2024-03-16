@@ -20,12 +20,6 @@ class Home extends StatelessWidget {
     final homeController = Get.put(HomeController());
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {
-      //     // HomeService.getHomeImpl();
-      //     homeController.getHomeScreen();
-      //   },
-      // ),
       backgroundColor: appBackground,
       appBar: AppBar(
         backgroundColor: appBackground,
@@ -51,23 +45,24 @@ class Home extends StatelessWidget {
             ),
           );
         }
-
-        return Padding(
-          padding: EdgeInsets.symmetric(horizontal: size.width * 0.03),
-          child: ListView(
-            //  crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const CarocelSliderWidget(),
-              SizedBox(height: size.height * 0.01),
-              Text(
-                'Our Programmes',
-                style: black24W600,
-              ),
-              SizedBox(height: size.height * 0.01),
-              HomeGrid(homeController: homeController, size: size),
-              BottomContaner(size: size),
-              SizedBox(height: size.height * 0.04),
-            ],
+        return SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: size.width * 0.03),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const CarocelSliderWidget(),
+                SizedBox(height: size.height * 0.01),
+                Text(
+                  'Our Programmes',
+                  style: black24W600,
+                ),
+                SizedBox(height: size.height * 0.01),
+                HomeGrid(homeController: homeController, size: size),
+                BottomContaner(size: size),
+                SizedBox(height: size.height * 0.04),
+              ],
+            ),
           ),
         );
       }),

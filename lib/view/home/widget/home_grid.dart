@@ -17,8 +17,8 @@ class HomeGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      //  height: size.height * 0.5,
+    return Container(
+      height: size.height * 0.5,
       child: GridView.builder(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
@@ -36,26 +36,20 @@ class HomeGrid extends StatelessWidget {
               children: [
                 ClipRRect(
                     borderRadius: BorderRadius.circular(15.r),
-                    child: Image.network(homeController
-                        .homeModel.topCourses![index].thumbnail
-                        .toString(),
-                         loadingBuilder: (context, child, loadingProgress) {
-
-                  if (loadingProgress==null) {
-                    return child;
-                  }
-                  return const Center(
-            child: CircularProgressIndicator(
-              color: appPrimary,
-            ),
-          );
-           
-               
-                },
-                        
-                        
-                        
-                        )),
+                    child: Image.network(
+                      homeController.homeModel.topCourses![index].thumbnail
+                          .toString(),
+                      loadingBuilder: (context, child, loadingProgress) {
+                        if (loadingProgress == null) {
+                          return child;
+                        }
+                        return const Center(
+                          child: CircularProgressIndicator(
+                            color: appPrimary,
+                          ),
+                        );
+                      },
+                    )),
                 SizedBox(
                   height: size.height * 0.008,
                 ),

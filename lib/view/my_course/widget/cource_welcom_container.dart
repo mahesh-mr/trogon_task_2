@@ -91,14 +91,23 @@ class CourseUserContainer extends StatelessWidget {
         ),
         Positioned(
           right: 20,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(50.r),
-            child: SizedBox(
-                height: size.height * 0.11,
-                width: size.width * 0.216,
-                child: Image.network(
-                    myCourseController.courseModel.userdata!.image.toString())),
-          ),
+          child: 
+          
+          ClipOval(
+  child: SizedBox.fromSize(
+    size: Size.fromRadius(48), // Image radius
+    child: Image.network(  myCourseController.courseModel.userdata!.image.toString(), fit: BoxFit.cover),
+  ),
+)
+          
+          // ClipRRect(
+          //   borderRadius: BorderRadius.circular(50.r),
+          //   child: SizedBox(
+          //       height: size.height * 0.11,
+          //       width: size.width * 0.216,
+          //       child: Image.network(
+          //           myCourseController.courseModel.userdata!.image.toString())),
+          // ),
         )
       ],
     );

@@ -44,63 +44,72 @@ class MyCourse extends StatelessWidget {
             ),
           );
         }
-        return Padding(
-          padding: EdgeInsets.symmetric(horizontal: size.width * 0.03),
-          child: ListView(
-            children: [
-              SizedBox(
-                height: size.height * 0.01,
-              ),
-              CourseUserContainer(size: size),
-              SizedBox(
-                height: size.height * 0.02,
-              ),
-              StrimingContaner(
-                  size: size, myCourseController: myCourseController),
-              SizedBox(
-                height: size.height * 0.05,
-              ),
-              Expanded(
-                  child: GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: myCourseController.courseModel.subjects!.length,
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    childAspectRatio: 2 / 5,
-                    mainAxisExtent: 160,
-                    crossAxisSpacing: 13,
-                    mainAxisSpacing: 12),
-                itemBuilder: (context, index) {
-                  final data = myCourseController.courseModel.subjects![index];
-                  return Column(
-                    children: [
-                      Image.network(
-                        data.icon.toString(),
-                        loadingBuilder: (context, child, loadingProgress) {
-                          if (loadingProgress == null) {
-                            return child;
-                          }
+        return SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: size.width * 0.03),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: size.height * 0.01,
+                ),
+                CourseUserContainer(size: size),
+                SizedBox(
+                  height: size.height * 0.02,
+                ),
+                StrimingContaner(
+                    size: size, myCourseController: myCourseController),
+                SizedBox(
+                  height: size.height * 0.05,
+                ),
+                Container(
+                    height: size.height * 0.5,
+                    child: GridView.builder(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      itemCount:
+                          myCourseController.courseModel.subjects!.length,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 3,
+                              childAspectRatio: 2 / 5,
+                              mainAxisExtent: 160,
+                              crossAxisSpacing: 13,
+                              mainAxisSpacing: 12),
+                      itemBuilder: (context, index) {
+                        final data =
+                            myCourseController.courseModel.subjects![index];
+                        return Container(
+                          child: Column(
+                            children: [
+                              Image.network(
+                                data.icon.toString(),
+                                loadingBuilder:
+                                    (context, child, loadingProgress) {
+                                  if (loadingProgress == null) {
+                                    return child;
+                                  }
 
-                          return const Center(
-                            child: CircularProgressIndicator(
-                              color: appPrimary,
-                            ),
-                          );
-                        },
-                      ),
-                      SizedBox(
-                        height: size.height * 0.008,
-                      ),
-                      Text(
-                        data.title.toString(),
-                        style: black12W400,
-                      )
-                    ],
-                  );
-                },
-              ))
-            ],
+                                  return const Center(
+                                    child: CircularProgressIndicator(
+                                      color: appPrimary,
+                                    ),
+                                  );
+                                },
+                              ),
+                              SizedBox(
+                                height: size.height * 0.008,
+                              ),
+                              Text(
+                                data.title.toString(),
+                                style: black12W400,
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                    ))
+              ],
+            ),
           ),
         );
       }),
