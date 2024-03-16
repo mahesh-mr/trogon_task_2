@@ -1,0 +1,197 @@
+Map<String , dynamic> homeJson =
+  {
+    "status": 1,
+    "message": "Success",
+    "data": {
+        "userdata": {
+            "id": "14",
+            "user_id": "14",
+            "name": "John User ",
+            "phone": "919656670867",
+            "device_id": "a8c0eb1b07b13513",
+            "device_id_message": "Already Logged in other device. Please Contact Us",
+            "course_id": "3",
+            "is_purchased": false,
+            "course_name": "Plus One Entrance Oriented Tuition  - Aster",
+            "batch_name": "",
+            "batch_id": "12",
+            "image": "https://trogon.info/tutorpro/lms_demo/uploads/user_image/placeholder.png?=rand22",
+            "query_number": "919090909090",
+            "inst_contact_phone": "919090909090",
+            "inst_contact_email": "project.trogon@gmail.com",
+            "inst_contact_address": "Kerala",
+            "privacy_policy": "<p></p><p></p><h2><span data-sheets-value=\"{\" data-sheets-userformat=\"{\" data-sheets-hyperlink=\"https://careermaker247.in/copy-rights-terms/\" xss=\"removed\">https://ecopen.info/learners/privacypolicy.html</span><br></h2>",
+            "dynamic_link": "",
+            "information": "Learners Academy Manjeri was established in 2014 with the aim of providing and enhancing excellent education in the disciplines of engineering and medical.\n\nLearners Academy is always ahead of the curve in providing the best to its students. For example, Learners App, the mobile platform, is now subscribed to by several hundred students every year and the number continues to grow.\n\nThe fact that we helps students realise their potential and provides them with the best teaching tools and methods puts Learners Academy in a class of its own in its segment. Learners App envisions a world where every learner has access to education to fulfil their potential.\n\nLearners Public School (LPS) is a initiative of the Learners Academy Manjeri, aims to provide the best higher secondary classes as well as entrance coaching to hardworking and dedicated students. The goal is to enable them to achieve admission in the best professional colleges of their choice, in their first attempt itself.\n\nWe are conducting Entrance Oriented Tuition & Residential Batches for Plus One & Plus Two Courses. These Courses offer to the students additional coaching for IIT-JEE and Medical entrance Examinations. As in the field of coaching we give equal importance to the extra-curricular activities of students in the Residential batches for uplifting their talents in art, literature, sports, games etc.\n\nOver the last ten years, Learners Academy has been constantly adapting and improving to offer a little more to the students every time. The numerous success stories are a testimony to the vision of Learners Academy. With consistent top ranks in Medical, Engineering and IIT entrance examinations over the years, the institute occupies a unique position among the entrance coaching centres in Malabar.\n\nOUR PROGRAMS:\n- Med/Engg Repeaters Batch\n- +1 & +2 Entrance Oriented Tuition\n- Learners Public School\n- Board Exam / Entrance Exam Crash Courses",
+            "android_version": "1.1",
+            "ios_version": "1.0",
+            "show_switch_course": "1",
+            "show_add_live_class": 1,
+            "show_exam": "1",
+            "show_practice": "1",
+            "show_material": "1",
+            "show_external_exam": 0,
+            "zoom_id": "",
+            "zoom_password": "",
+            "zoom_api_key": "sUAAhB65LzcXW1pBKmPGEfkVVww8IgddnwMq",
+            "zoom_secret_key": "hlzAn6IKPD6jPv11ZNW3hib0tXjU0j0oBtTi",
+            "zoom_web_domain": "zoom.us"
+        },
+        "testimonial": [],
+        "ad_banner": [
+            {
+                "id": "47",
+                "image": "https://trogon.info/tutorpro/lms_demo/uploads/ad_banner/112023/c8801ca29082b7d6250d346ccfd7e094.jpg",
+                "link": ""
+            },
+            {
+                "id": "46",
+                "image": "https://trogon.info/tutorpro/lms_demo/uploads/ad_banner/102023/7ef35dabd33b9fe0b164169f9aedb653.jpg",
+                "link": ""
+            },
+            {
+                "id": "45",
+                "image": "https://trogon.info/tutorpro/lms_demo/uploads/ad_banner/102023/9798bab747e5f299808c3130845d5edd.jpeg",
+                "link": ""
+            },
+            {
+                "id": "42",
+                "image": "https://trogon.info/tutorpro/lms_demo/uploads/ad_banner/102023/1e7f951ef6805a8d5f74ae66a2ffe6c7.jpeg",
+                "link": ""
+            }
+        ],
+        "top_courses": [
+            {
+                "id": "3",
+                "title": "Plus One Entrance Oriented Tuition ",
+                "description": "Morning & Holiday Batches",
+                "short_description": "+1 EOT",
+                "thumbnail": "https://trogon.info/tutorpro/lms_demo/uploads/thumbnails/course_thumbnails/course_thumbnail_default_3.jpg?=rand1",
+                "price": "0 INR",
+                "is_free_course": null,
+                "rating": 0,
+                "number_of_ratings": 0,
+                "total_enrollment": "232 Enrolments",
+                "duration": "",
+                "total_lessons": 24,
+                "shareable_link": "https://trogon.info/tutorpro/lms_demo/home/course/plus-one-entrance-oriented-tuition/3"
+            },
+            {
+                "id": "4",
+                "title": "Plus Two Entrance Oriented Tuition",
+                "description": "<p>Morning & Holiday Batches</p>",
+                "short_description": "+2 EOT",
+                "thumbnail": "https://trogon.info/tutorpro/lms_demo/uploads/thumbnails/course_thumbnails/course_thumbnail_default_4.jpg?=rand3",
+                "price": "0 INR",
+                "is_free_course": null,
+                "rating": 0,
+                "number_of_ratings": 0,
+                "total_enrollment": "140 Enrolments",
+                "duration": "",
+                "total_lessons": 20,
+                "shareable_link": "https://trogon.info/tutorpro/lms_demo/home/course/plus-two-entrance-oriented-tuition/4"
+            },
+            {
+                "id": "5",
+                "title": "Learners Public School",
+                "description": "<p class=\"MsoNormal\"><span xss=\"removed\"><b>Learners Public School (LPS)</b> is a initiative\r\nof Learners Academy, aims to provide the best higher secondary\r\nclasses as well as entrance coaching to hardworking and dedicated students.</span></p><p class=\"MsoNormal\"><span xss=\"removed\"> The\r\ngoal is to enable them to achieve admission in the best professional colleges\r\nof their choice, in their first attempt itself.<o></o></span></p>",
+                "short_description": "LPS",
+                "thumbnail": "https://trogon.info/tutorpro/lms_demo/uploads/thumbnails/course_thumbnails/course_thumbnail_default_5.jpg?=rand10",
+                "price": "0 INR",
+                "is_free_course": null,
+                "rating": 0,
+                "number_of_ratings": 0,
+                "total_enrollment": "67 Enrolments",
+                "duration": "",
+                "total_lessons": 42,
+                "shareable_link": "https://trogon.info/tutorpro/lms_demo/home/course/learners-public-school/5"
+            },
+            {
+                "id": "6",
+                "title": "Repeaters Batch",
+                "description": "",
+                "short_description": "RB",
+                "thumbnail": "https://trogon.info/tutorpro/lms_demo/uploads/thumbnails/course_thumbnails/course_thumbnail_default_6.jpg?=rand4",
+                "price": "0 INR",
+                "is_free_course": null,
+                "rating": 0,
+                "number_of_ratings": 0,
+                "total_enrollment": "0 Enrolments",
+                "duration": "",
+                "total_lessons": 0,
+                "shareable_link": "https://trogon.info/tutorpro/lms_demo/home/course/repeaters-batch/6"
+            }
+        ],
+        "trending_courses": [
+            {
+                "id": "3",
+                "title": "Plus One Entrance Oriented Tuition ",
+                "description": "Morning & Holiday Batches",
+                "short_description": "+1 EOT",
+                "thumbnail": "https://trogon.info/tutorpro/lms_demo/uploads/thumbnails/course_thumbnails/course_thumbnail_default_3.jpg?=rand7",
+                "price": "0 INR",
+                "is_free_course": null,
+                "rating": 0,
+                "number_of_ratings": 0,
+                "total_enrollment": "232 Enrolments",
+                "duration": "",
+                "total_lessons": 24,
+                "shareable_link": "https://trogon.info/tutorpro/lms_demo/home/course/plus-one-entrance-oriented-tuition/3"
+            },
+            {
+                "id": "4",
+                "title": "Plus Two Entrance Oriented Tuition",
+                "description": "<p>Morning & Holiday Batches</p>",
+                "short_description": "+2 EOT",
+                "thumbnail": "https://trogon.info/tutorpro/lms_demo/uploads/thumbnails/course_thumbnails/course_thumbnail_default_4.jpg?=rand5",
+                "price": "0 INR",
+                "is_free_course": null,
+                "rating": 0,
+                "number_of_ratings": 0,
+                "total_enrollment": "140 Enrolments",
+                "duration": "",
+                "total_lessons": 20,
+                "shareable_link": "https://trogon.info/tutorpro/lms_demo/home/course/plus-two-entrance-oriented-tuition/4"
+            },
+            {
+                "id": "5",
+                "title": "Learners Public School",
+                "description": "<p class=\"MsoNormal\"><span xss=\"removed\"><b>Learners Public School (LPS)</b> is a initiative\r\nof Learners Academy, aims to provide the best higher secondary\r\nclasses as well as entrance coaching to hardworking and dedicated students.</span></p><p class=\"MsoNormal\"><span xss=\"removed\"> The\r\ngoal is to enable them to achieve admission in the best professional colleges\r\nof their choice, in their first attempt itself.<o></o></span></p>",
+                "short_description": "LPS",
+                "thumbnail": "https://trogon.info/tutorpro/lms_demo/uploads/thumbnails/course_thumbnails/course_thumbnail_default_5.jpg?=rand6",
+                "price": "0 INR",
+                "is_free_course": null,
+                "rating": 0,
+                "number_of_ratings": 0,
+                "total_enrollment": "67 Enrolments",
+                "duration": "",
+                "total_lessons": 42,
+                "shareable_link": "https://trogon.info/tutorpro/lms_demo/home/course/learners-public-school/5"
+            },
+            {
+                "id": "6",
+                "title": "Repeaters Batch",
+                "description": "",
+                "short_description": "RB",
+                "thumbnail": "https://trogon.info/tutorpro/lms_demo/uploads/thumbnails/course_thumbnails/course_thumbnail_default_6.jpg?=rand4",
+                "price": "0 INR",
+                "is_free_course": null,
+                "rating": 0,
+                "number_of_ratings": 0,
+                "total_enrollment": "0 Enrolments",
+                "duration": "",
+                "total_lessons": 0,
+                "shareable_link": "https://trogon.info/tutorpro/lms_demo/home/course/repeaters-batch/6"
+            }
+        ],
+        "demo_videos": [],
+        "demo_quizzes": [],
+        "current_affairs_image_url": "https://trogon.info/tutorpro/lms_demo/uploads/current_affairs.png",
+        "show_scholarship_registration": "0",
+        "image_scholarship_registration": "https://trogon.info/tutorpro/lms_demo/uploads/scholarship/image_scholarship_registration.png",
+        "url_scholarship_registration": "https://forms.gle/ogNiEejwMDEYAKJV7",
+        "show_scholarship_exam": "0",
+        "image_scholarship_exam": "https://trogon.info/tutorpro/lms_demo/uploads/scholarship/image_scholarship_exam.png",
+        "url_scholarship_exam": "https://trogon.info/tutorpro/lms_demo/home/scholarship_exam_web_view/"
+    }
+};
