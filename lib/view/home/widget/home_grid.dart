@@ -38,7 +38,24 @@ class HomeGrid extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15.r),
                     child: Image.network(homeController
                         .homeModel.topCourses![index].thumbnail
-                        .toString())),
+                        .toString(),
+                         loadingBuilder: (context, child, loadingProgress) {
+
+                  if (loadingProgress==null) {
+                    return child;
+                  }
+                  return const Center(
+            child: CircularProgressIndicator(
+              color: appPrimary,
+            ),
+          );
+           
+               
+                },
+                        
+                        
+                        
+                        )),
                 SizedBox(
                   height: size.height * 0.008,
                 ),

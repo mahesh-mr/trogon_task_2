@@ -29,6 +29,21 @@ class CarocelSliderWidget extends StatelessWidget {
                 item.image.toString(),
                 fit: BoxFit.cover,
                 width: size.width,
+                loadingBuilder: (context, child, loadingProgress) {
+
+                  if (loadingProgress==null) {
+                    return child;
+                  }
+
+                   return const Center(
+            child: CircularProgressIndicator(
+              color: appPrimary,
+            ),
+          );
+           
+               
+                },
+
                 errorBuilder: (context, error, stackTrace) => Padding(
                   padding: const EdgeInsets.all(3.0),
                   child: Image.asset("assets/carosel.png"),

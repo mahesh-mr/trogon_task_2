@@ -75,7 +75,21 @@ class MyCourse extends StatelessWidget {
                   final data = myCourseController.courseModel.subjects![index];
                   return Column(
                     children: [
-                      Image.network(data.icon.toString()),
+                      Image.network(data.icon.toString(),
+                       loadingBuilder: (context, child, loadingProgress) {
+
+                  if (loadingProgress==null) {
+                    return child;
+                  }
+
+                   return const Center(
+            child: CircularProgressIndicator(
+              color: appPrimary,
+            ),
+          );
+           
+               
+                },),
                       SizedBox(
                         height: size.height * 0.008,
                       ),
